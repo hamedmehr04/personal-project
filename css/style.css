@@ -24,7 +24,9 @@ a,span,p{
 /* Start Header Stayle */
 header{
     background-color:#fff
-   
+}
+header nav{
+    display: inline-block;
 }
 header nav > ul{
 
