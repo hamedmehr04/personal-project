@@ -1,10 +1,13 @@
 /* General Styles */
 body{
     margin: 0;
+    background-color: #f1f1f1;
 }
 .container{
-    width: 1200px;
+    
  background-color: rgb(255, 255, 255);
+ width: 1100px;
+  margin: 0 auto;
 }
 ul{
     margin: 0;
@@ -23,11 +26,55 @@ a,span,p{
 }
 /* Start Header Stayle */
 header{
-    background-color:#fff
+    background-color: white;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
 }
 header nav{
     display: inline-block;
 }
-header nav > ul{
 
+header nav li{
+    position: relative ;
 }
+/* start main menu level 1 */
+header nav>ul>li{
+    margin-left: 10px;
+}
+header nav>ul>li>a {
+    padding: 10px;
+}
+header nav>ul>li>a:hover{
+    color: #8490ff;
+}
+header nav>ul>li>a:visited{
+    color: #8490ff;
+}
+/* start main menu level 2 */
+
+header nav>ul>li>ul{
+    background-color: rgb(249, 171, 171);
+    position: absolute;
+    top: calc(100% + 24px);
+    right: 0;
+    width: max-content;
+    padding: 10px;
+}
+
+header nav>ul>li>ul>li{
+    display: flex;
+}
+
+header nav>ul>li>ul>li>a{
+    padding: 10px 7px;
+    padding-right: 100px;
+}
+
+header nav>ul>li>ul>li>a:hover{
+    color: #8490ff;
+}
+
